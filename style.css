@@ -4,7 +4,7 @@
     scroll-behavior: smooth;
 }
 
-/* Navbar Styling */
+/*************************************** Navbar Styling **************************************************************************/
 
 .navbar {
     display: flex;
@@ -41,13 +41,14 @@
 }
 
 .active, .btn:hover {
-    color: white;
+    color: rgb(252, 252, 252);
     text-decoration: underline;
 }
 
 .navbar button {
     padding: 10px 20px;
     border-radius: 30px;
+    background-color: #fff;
     border: none;
     cursor: pointer;
 }
@@ -111,7 +112,7 @@
     animation-duration: 2s;
 }
 
-/* About Me Styling */
+/************************************ About Me Styling ******************************************************************/
 
 .about {
     display: flex;
@@ -158,7 +159,7 @@
     font-weight: bolder;
 }
 
-/* My Services Styling */
+/* *************************************************My Services Styling ***************************************************/
 
 .services {
     display: flex;
@@ -199,8 +200,10 @@
 }
 
 .card img{
-    width: 400px;
+    width: 200px;
+    height: 200px;
     border-radius: 30px;
+    /* img ayayayay */
 }
 
 @keyframes slideRight {
@@ -213,3 +216,72 @@
         transform: translateX(200px);
     }
 }
+/* ====================================Projects============================================= */
+.projects {
+    /* display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px; */
+    /* padding-top: 100px;
+    padding-bottom: 200px; */
+}
+.projects h1{
+    text-align: center;
+}
+
+.mainproject{
+    display: flex;
+    background-color: #a8b9a6;
+    border-radius: 10px;
+    justify-content: space-around;
+    border: none;
+    margin: 0 190px 20px;
+     padding:40px;
+     align-items: center;
+     gap: 300px;
+     
+
+}
+.projectleft img{
+    width: 170px;
+    height: 170px;
+}
+
+/* =====================================================skills ====================================================================== */
+.skills{
+
+}
+.skills h2{
+    text-align: center;
+    
+}
+.skillscard{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+
+}
+.skillscard img{
+    width: 100px;
+    height: 100px;
+}
+.cardskillsleft{
+    border-radius: 10px;
+    box-shadow: 10px 10px #313131;
+    background-color: #a8b9a6;
+    padding: 70px;
+}
+.cardskillscenter{
+    border-radius: 10px;
+    box-shadow: 10px 10px #313131;
+    background-color:  #a8b9a6;
+    padding: 70px;
+}
+.cardskillsriaght{
+    border-radius: 10px;
+    box-shadow: 10px 10px#313131;
+    background-color:  #a8b9a6;
+    padding: 70px;
+}
+
+/* box-shadow: 10px 10px #b8c9b6; */
