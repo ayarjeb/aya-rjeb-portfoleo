@@ -63,7 +63,7 @@
     text-decoration: underline;
 }
 
-/* Hero Styling */
+/* *******************************************Hero Styling **************************************************************************/
 
 .hero {
     padding: 200px 0px 100px 50px;
@@ -224,9 +224,11 @@
     gap: 50px; */
     /* padding-top: 100px;
     padding-bottom: 200px; */
+    padding-top: 150px;
 }
 .projects h1{
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .mainproject{
@@ -249,6 +251,7 @@
 
 /* =====================================================skills ====================================================================== */
 .skills{
+    padding: 150px;
 
 }
 .skills h2{
@@ -270,18 +273,109 @@
     box-shadow: 10px 10px #313131;
     background-color: #a8b9a6;
     padding: 70px;
+    text-align: center;
 }
 .cardskillscenter{
     border-radius: 10px;
     box-shadow: 10px 10px #313131;
     background-color:  #a8b9a6;
     padding: 70px;
+    text-align: center;
 }
 .cardskillsriaght{
     border-radius: 10px;
     box-shadow: 10px 10px#313131;
     background-color:  #a8b9a6;
     padding: 70px;
+    text-align: center;
+    gap: 20px;
 }
 
 /* box-shadow: 10px 10px #b8c9b6; */
+/* ****************************contact************************************************ */
+.contact{
+    /* margin-top: 50px; */
+    padding: 150px;
+
+}
+.title h2{
+    text-align: center;
+}
+.maincontact{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+     
+}
+.leftcontact{
+    background-color:#a8b9a6;
+    padding: 0 0px;
+    /* margin: 30px; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+.phone{
+    display: flex;
+    gap: 10px;
+
+}
+.leftcontact img{
+    width: 20px;
+    height: 20px;
+    align-items: center;
+}
+.email{
+    display: flex;
+    gap: 10px;
+}
+.ville{
+    display: flex;
+    gap: 10px; 
+}
+.raightcontact{
+    background-color:#a8b9a6;
+    padding: 50px 50px;
+
+}
+.raightcontact input{
+
+    width:400px;
+    height: 50PX;
+    padding-right: 50px ;
+    text-align: center;
+    gap: 50px;
+    display: flex;
+
+    
+
+}
+.fullname{
+    /* padding: 20px 200px;
+    margin: 20px 20px; */
+}
+.emailphon{
+    display: flex;
+    gap: 20px;
+    /* width: 50%; */
+    
+}
+
+#email{
+    width:200PX;
+    height: 50PX;
+
+}
+#phoneNumber {
+    width:95px;
+    padding-left: 30px;
+}
+.raightcontact button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
