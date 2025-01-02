@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #a8b9a6;
+    padding: 20px 0;
+    position: fixed;
+    gap: 400px;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 20px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.active, .btn:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.navbar button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar button a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar ul li .active {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Hero Styling */
+
+.hero {
+    padding: 200px 0px 100px 50px;
+    background-color: #a8b9a6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 250px;
+}
+
+.heroLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 500px;
+    animation-name: slideRight;
+    animation-duration: 2s;
+}
+
+.heroLeft span {
+    color: #fff;
+}
+
+.heroLeft p {
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    font-size: larger;
+}
+
+.icons i {
+    cursor: pointer;
+    color: #000;
+}
+
+
+.heroRight img {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    /* padding-left: 50px; */
+    animation-name: slideLeft;
+    animation-duration: 2s;
+}
+
+/* About Me Styling */
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    gap: 20px;
+}
+
+.about img {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+.aboutRight {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutRight h3 {
+    color: #a8b9a6;
+    font-weight: bolder;
+}
+
+.aboutRight button {
+    cursor: pointer;
+    background-color: #a8b9a6;
+    color: #fff;
+    padding: 20px 5px;
+    border: none;
+    border-radius: 50px;
+    width: 40%;
+}
+
+.aboutRight p {
+    font-size: large;
+}
+
+.title {
+    font-weight: bolder;
+}
+
+/* My Services Styling */
+
+.services {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.services h2 {
+    padding-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 400px;
+    font-size: large;
+    border: 2px solid #a8b9a6;
+    border-radius: 30px;
+    padding: 10px;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+}
+
+.card:hover {
+    transition: 0.5s;
+    box-shadow: 3px 3px 10px #a8b9a6;
+}
+
+.card img{
+    width: 400px;
+    border-radius: 30px;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-200px);
+    }
+}
+@keyframes slideLeft {
+    from {
+        transform: translateX(200px);
+    }
+}
