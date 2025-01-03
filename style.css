@@ -17,7 +17,15 @@
     padding-right: 200px;
     width: 100%;
 }
+.navbar h1 a:hover {
+    color: #fff;
+    cursor: pointer;
+}
 
+.navbar h1 a {
+    color: #000;
+    text-decoration: none;
+}
 .navbar ul {
     display: flex;
 }
@@ -107,18 +115,31 @@
     height: 500px;
     width: 500px;
     border-radius: 50%;
-    /* padding-left: 50px; */
+    border: 5px solid white;
     animation-name: slideLeft;
     animation-duration: 2s;
 }
+.heroRight img:hover{
+    box-shadow: 0 0 25px white;
+}
+
 
 /************************************ About Me Styling ******************************************************************/
-
+@keyframes slideRight {
+    from {
+        transform: translateX(-200px);
+    }
+}
+@keyframes slideLeft {
+    from {
+        transform: translateX(200px);
+    }
+}
 .about {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 150px;
+    padding-top: 120px;
     padding-bottom: 200px;
     gap: 20px;
 }
@@ -127,6 +148,10 @@
     height: 500px;
     width: 500px;
     border-radius: 50%;
+    border: 5px solid #a8b9a6;
+}
+.about img:hover{
+    box-shadow: 0 0 25px #a8b9a6;
 }
 
 .aboutRight {
@@ -149,6 +174,10 @@
     border: none;
     border-radius: 50px;
     width: 40%;
+
+}
+.aboutRight button:hover{
+    box-shadow: 0 0 10px #a8b9a6 ;
 }
 
 .aboutRight p {
@@ -166,8 +195,9 @@
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    padding-top: 100px;
+    padding-top: 120px;
     padding-bottom: 200px;
+    background-color: #a8b9a6 ;
 }
 
 .services h2 {
@@ -192,11 +222,14 @@
     padding: 10px;
     animation-name: slideLeft;
     animation-duration: 2s;
+    background-color: #d9d9d9;
+    border: none;
 }
 
 .card:hover {
-    transition: 0.5s;
-    box-shadow: 3px 3px 10px #a8b9a6;
+    transition: 0.5s ease;
+    box-shadow: 0px 0px 25px #fff;
+    width: 450px;
 }
 
 .card img{
@@ -206,25 +239,10 @@
     /* img ayayayay */
 }
 
-@keyframes slideRight {
-    from {
-        transform: translateX(-200px);
-    }
-}
-@keyframes slideLeft {
-    from {
-        transform: translateX(200px);
-    }
-}
+
 /* ====================================Projects============================================= */
 .projects {
-    /* display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px; */
-    /* padding-top: 100px;
-    padding-bottom: 200px; */
-    padding-top: 150px;
+    padding-top: 120px;
 }
 .projects h1{
     text-align: center;
@@ -241,17 +259,35 @@
      padding:40px;
      align-items: center;
      gap: 300px;
-     
+}
 
+.mainproject:hover {
+    box-shadow: 0 0 25px #a8b9a6;
 }
 .projectleft img{
-    width: 170px;
-    height: 170px;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease;
+    border: 3PX solid white;
+}
+
+.projectleft img:hover {
+    width: 250px; /* Augmente la taille de l'image de 20% */
+    height: 250px;
+    transition: 0.3s ease;
+}
+
+
+
+/* Vous pouvez également ajouter un léger effet de flou pour l'arrière-plan si nécessaire */
+.projectleft {
+    overflow: hidden; /* Assure que l'image ne dépasse pas son conteneur */
 }
 
 /* =====================================================skills ====================================================================== */
 .skills{
-    padding: 150px;
+    padding: 120px;
+    background-color:  #a8b9a6;
 
 }
 .skills h2{
@@ -262,7 +298,6 @@
     display: flex;
     justify-content: space-around;
     margin: 20px;
-
 }
 .skillscard img{
     width: 100px;
@@ -270,112 +305,133 @@
 }
 .cardskillsleft{
     border-radius: 10px;
-    box-shadow: 10px 10px #313131;
-    background-color: #a8b9a6;
+    background-color:#d9d9d9;
     padding: 70px;
     text-align: center;
+    box-shadow: 10px 10px 15px #313131;  /* Default box-shadow */
+    transition: box-shadow 0.3s ease; /* Add transition effect */
 }
 .cardskillscenter{
     border-radius: 10px;
-    box-shadow: 10px 10px #313131;
-    background-color:  #a8b9a6;
+    background-color:  #d9d9d9;
     padding: 70px;
     text-align: center;
+    box-shadow: 10px 10px 15px #313131;  /* Default box-shadow */
+    transition: box-shadow 0.3s ease; /* Add transition effect */
 }
 .cardskillsriaght{
     border-radius: 10px;
-    box-shadow: 10px 10px#313131;
-    background-color:  #a8b9a6;
+    background-color: #d9d9d9;
     padding: 70px;
     text-align: center;
     gap: 20px;
+    box-shadow: 10px 10px 15px #313131;  /* Default box-shadow */
+    transition: box-shadow 0.3s ease; /* Add transition effect */
 }
 
-/* box-shadow: 10px 10px #b8c9b6; */
+
+.cardskillsleft:hover, .cardskillscenter:hover, .cardskillsriaght:hover {
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.7); /* Brighter shadow effect */
+    width: 150px;
+    height: 150px;
+    transition: 0.3s ease;
+}
 /* ****************************contact************************************************ */
-.contact{
-    /* margin-top: 50px; */
-    padding: 150px;
 
-}
-.title h2{
-    text-align: center;
-}
-.maincontact{
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
-     
-}
-.leftcontact{
-    background-color:#a8b9a6;
-    padding: 0 0px;
-    /* margin: 30px; */
+
+
+.contact {
     display: flex;
     flex-direction: column;
-    gap: 50px;
-
-}
-.phone{
-    display: flex;
-    gap: 10px;
-
-}
-.leftcontact img{
-    width: 20px;
-    height: 20px;
     align-items: center;
-}
-.email{
-    display: flex;
-    gap: 10px;
-}
-.ville{
-    display: flex;
-    gap: 10px; 
-}
-.raightcontact{
-    background-color:#a8b9a6;
-    padding: 50px 50px;
-
-}
-.raightcontact input{
-
-    width:400px;
-    height: 50PX;
-    padding-right: 50px ;
-    text-align: center;
-    gap: 50px;
-    display: flex;
-
-    
-
-}
-.fullname{
-    /* padding: 20px 200px;
-    margin: 20px 20px; */
-}
-.emailphon{
-    display: flex;
     gap: 20px;
-    /* width: 50%; */
-    
+    padding-bottom: 150px;
+    padding-top: 200px;
 }
 
-#email{
-    width:200PX;
-    height: 50PX;
+.contacts {
+    display: flex;
+    gap: 100px;
+}
 
+.contactLeft {
+    background-color: #a8b9a6;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    gap: 30px;
 }
-#phoneNumber {
-    width:95px;
-    padding-left: 30px;
+
+.contactLeft h3 {
+    font-size: larger;
 }
-.raightcontact button{
+
+.contactLeft p {
+    font-size: large;
+    padding-bottom: 30px;
+}
+
+form {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactRight {
+    display: flex;
+    flex-direction: column;
+    background-color: #a8b9a6;
+    padding: 20px;
+    border-radius: 30px;
+    gap: 30px;
+}
+
+.mailphone input{
+    width: 205px;
+}
+#mail {
+    width: 280px;
+}
+
+.contactRight input {
+    padding: 15px 20px;
+}
+
+.size {
+    width: 92%;
+}
+
+.contactRight textarea {
+    width: 550px;
+    height: 150px;
+    padding: 10px;
+}
+
+.contactRight button {
+    width: 20%;
     padding: 10px 20px;
     border-radius: 30px;
-    background-color: #fff;
     border: none;
     cursor: pointer;
+}
 
+.contactRight button:hover {
+    box-shadow: 0 0 15px #fff;
+}
+/* =======================footer====================================================== */
+ 
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: larger;
+    padding: 15px;
+    background-color: #a8b9a6;
+    margin-top: 20px;
+    
 }
