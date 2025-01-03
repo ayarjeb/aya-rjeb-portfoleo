@@ -305,7 +305,7 @@
 }
 .cardskillsleft{
     border-radius: 10px;
-    background-color:#d9d9d9;
+    background-color:white;
     padding: 70px;
     text-align: center;
     box-shadow: 10px 10px 15px #313131;  /* Default box-shadow */
@@ -313,7 +313,7 @@
 }
 .cardskillscenter{
     border-radius: 10px;
-    background-color:  #d9d9d9;
+    background-color:  #fff;
     padding: 70px;
     text-align: center;
     box-shadow: 10px 10px 15px #313131;  /* Default box-shadow */
@@ -321,7 +321,7 @@
 }
 .cardskillsriaght{
     border-radius: 10px;
-    background-color: #d9d9d9;
+    background-color: #fff;
     padding: 70px;
     text-align: center;
     gap: 20px;
